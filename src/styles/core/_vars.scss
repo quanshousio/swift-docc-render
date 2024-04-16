@@ -15,8 +15,11 @@ $form-focus-size: 4px;
 
 $generic-border-style: 1px solid var(--color-grid);
 
+// Hover opacity transition
+$hover-opacity-transition: opacity .2s cubic-bezier(.645, .045, .355, 1) !default;
+
 // Border radius
-$border-radius: var(--border-radius, 4px) !default;
+$border-radius: var(--border-radius, 15px) !default;
 $nano-border-radius: $border-radius !default;
 $tiny-border-radius: $border-radius !default;
 $large-border-radius: $border-radius !default;

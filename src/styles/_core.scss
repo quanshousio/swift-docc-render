@@ -28,6 +28,8 @@
 @import './core/breakpoints';
 @import './core/nav';
 @import './core/buttons';
+@import './core/header';
+@import './core/footer';
 
 // import the current theme _core file
 @import "~theme/styles/_theme_core.scss";
