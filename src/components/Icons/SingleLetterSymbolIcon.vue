@@ -15,8 +15,8 @@
     themeId="single-letter"
   >
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-      <rect stroke="currentColor" x="1" y="1" width="14" height="14"></rect>
-      <text font-size="11" font-weight="bold" fill="currentColor" x="49%" y="12" text-anchor="middle">
+      <rect stroke="currentColor" x="1" y="1" rx="3" width="13" height="13"></rect>
+      <text font-size="11" font-weight="bold" fill="currentColor" x="46.5%" y="11.2" text-anchor="middle">
         <tspan>{{ symbol }}</tspan>
       </text>
     </g>

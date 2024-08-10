@@ -1,0 +1,27 @@
+/**
+ * This source file is part of the Swift.org open source project
+ *
+ * Copyright (c) 2021-2024 Apple Inc. and the Swift project authors
+ * Licensed under Apache License v2.0 with Runtime Library Exception
+ *
+ * See https://swift.org/LICENSE.txt for license information
+ * See https://swift.org/CONTRIBUTORS.txt for Swift project authors
+*/
+
+$header-height: 44px;
+
+$logo-svg: url('~theme/assets/img/logo.svg') !default;
+$logo-dark-svg: url('~theme/assets/img/logo-dark.svg') !default;
+
+$logo-compact-svg: url('~theme/assets/img/logo-compact.svg') !default;
+$logo-compact-dark-svg: url('~theme/assets/img/logo-compact-dark.svg') !default;
+
+$logo-height: 38px;
+$logo-width: 130px;
+
+$menu-svg: url('~theme/assets/img/icons/icon-menu.svg') !default;
+$menu-dark-svg: url('~theme/assets/img/icons/icon-menu-dark.svg') !default;
+$close-svg: url('~theme/assets/img/icons/icon-close.svg') !default;
+$close-dark-svg: url('~theme/assets/img/icons/icon-close-dark.svg') !default;
+
+$toggle-size: 20px;

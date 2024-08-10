@@ -13,14 +13,180 @@
 // List of common fonts to share in font groups.
 @use "sass:math";
 
-$default-fonts: ('Helvetica Neue', 'Helvetica', 'Arial', sans-serif) !default;
+$default-fonts: (
+  system-ui,
+  -apple-system,
+  BlinkMacSystemFont,
+  "Helvetica Neue",
+  "Helvetica",
+  "Arial",
+  sans-serif
+) !default;
 
 $font-content:  $default-fonts !default;
 $font-mono: var(--typography-html-font-mono, (Menlo, monospace)) !default;
 
 // Supported font-weight values
+$font-weight-regular: 400 !default;
 $font-weight-semibold: 600 !default;
 $font-weight-bold: 700 !default;
+
+// SF fonts
+@font-face {
+  font-family: SF Pro Display;
+  font-display: fallback;
+  font-style: italic;
+  font-weight: $font-weight-regular;
+  src: url(~@/assets/fonts/sf-pro-display_regular-italic.woff2) format("woff2"),
+    url(~@/assets/fonts/sf-pro-display_regular-italic.woff) format("woff");
+}
+
+@font-face {
+  font-family: SF Pro Display;
+  font-display: fallback;
+  font-style: normal;
+  font-weight: $font-weight-semibold;
+  src: url(~@/assets/fonts/sf-pro-display_semibold.woff2) format("woff2"),
+    url(~@/assets/fonts/sf-pro-display_semibold.woff) format("woff");
+}
+
+@font-face {
+  font-family: SF Pro Display;
+  font-display: fallback;
+  font-style: italic;
+  font-weight: $font-weight-semibold;
+  src: url(~@/assets/fonts/sf-pro-display_semibold-italic.woff2) format("woff2"),
+    url(~@/assets/fonts/sf-pro-display_semibold-italic.woff) format("woff");
+}
+
+@font-face {
+  font-family: SF Pro Display;
+  font-display: fallback;
+  font-style: normal;
+  font-weight: $font-weight-bold;
+  src: url(~@/assets/fonts/sf-pro-display_bold.woff2) format("woff2"),
+    url(~@/assets/fonts/sf-pro-display_bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: SF Pro Display;
+  font-display: fallback;
+  font-style: italic;
+  font-weight: $font-weight-bold;
+  src: url(~@/assets/fonts/sf-pro-display_bold-italic.woff2) format("woff2"),
+    url(~@/assets/fonts/sf-pro-display_bold-italic.woff) format("woff");
+}
+
+@font-face {
+  font-family: SF Pro Display;
+  font-display: fallback;
+  font-style: normal;
+  font-weight: $font-weight-regular;
+  src: url(~@/assets/fonts/sf-pro-display_regular.woff2) format("woff2"),
+    url(~@/assets/fonts/sf-pro-display_regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: SF Pro Text;
+  font-display: fallback;
+  font-style: italic;
+  font-weight: $font-weight-regular;
+  src: url(.~@/assets/fonts/sf-pro-text_regular-italic.woff2) format("woff2"),
+    url(~@/assets/fonts/sf-pro-text_regular-italic.woff) format("woff");
+}
+
+@font-face {
+  font-family: SF Pro Text;
+  font-display: fallback;
+  font-style: normal;
+  font-weight: $font-weight-semibold;
+  src: url(~@/assets/fonts/sf-pro-text_semibold.woff2) format("woff2"),
+    url(~@/assets/fonts/sf-pro-text_semibold.woff) format("woff");
+}
+
+@font-face {
+  font-family: SF Pro Text;
+  font-display: fallback;
+  font-style: italic;
+  font-weight: $font-weight-semibold;
+  src: url(~@/assets/fonts/sf-pro-text_semibold-italic.woff2) format("woff2"),
+    url(~@/assets/fonts/sf-pro-text_semibold-italic.woff) format("woff");
+}
+
+@font-face {
+  font-family: SF Pro Text;
+  font-display: fallback;
+  font-style: normal;
+  font-weight: $font-weight-bold;
+  src: url(~@/assets/fonts/sf-pro-text_bold.woff2) format("woff2"),
+    url(~@/assets/fonts/sf-pro-text_bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: SF Pro Text;
+  font-display: fallback;
+  font-style: italic;
+  font-weight: $font-weight-bold;
+  src: url(~@/assets/fonts/sf-pro-text_bold-italic.woff2) format("woff2"),
+    url(~@/assets/fonts/sf-pro-text_bold-italic.woff) format("woff");
+}
+
+@font-face {
+  font-family: SF Pro Text;
+  font-display: fallback;
+  font-style: normal;
+  font-weight: $font-weight-regular;
+  src: url(~@/assets/fonts/sf-pro-text_regular.woff2) format("woff2"),
+    url(~@/assets/fonts/sf-pro-text_regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: SF Mono;
+  font-display: fallback;
+  font-style: italic;
+  font-weight: $font-weight-regular;
+  src: url(~@/assets/fonts/sf-mono_regular-italic.woff) format("woff");
+}
+
+@font-face {
+  font-family: SF Mono;
+  font-display: fallback;
+  font-style: normal;
+  font-weight: $font-weight-semibold;
+  src: url(~@/assets/fonts/sf-mono_semibold.woff) format("woff");
+}
+
+@font-face {
+  font-family: SF Mono;
+  font-display: fallback;
+  font-style: italic;
+  font-weight: $font-weight-semibold;
+  src: url(~@/assets/fonts/sf-mono_semibold-italic.woff) format("woff");
+}
+
+@font-face {
+  font-family: SF Mono;
+  font-display: fallback;
+  font-style: normal;
+  font-weight: $font-weight-bold;
+  src: url(~@/assets/fonts/sf-mono_bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: SF Mono;
+  font-display: fallback;
+  font-style: italic;
+  font-weight: $font-weight-bold;
+  src: url(~@/assets/fonts/sf-mono_bold-italic.woff) format("woff");
+}
+
+@font-face {
+  font-family: SF Mono;
+  font-display: fallback;
+  font-style: normal;
+  font-weight: $font-weight-regular;
+  src: url(~@/assets/fonts/sf-mono_regular.woff) format("woff");
+}
 
 //
 // Generate font styles for each specified breakpoint

@@ -767,6 +767,12 @@ $content-max-width: map-deep-get($breakpoint-attributes, (nav, large, content-wi
     width: 100%;
     height: rem(12px);
     transition: $nav-chevron-transition;
+    margin-top: 2px;
+    transform: translateY(0);
+
+    &:hover {
+      opacity: .65;
+    }
 
     &::before,
     &::after {
@@ -777,19 +783,17 @@ $content-max-width: map-deep-get($breakpoint-attributes, (nav, large, content-wi
       width: rem(12px);
       height: rem(1px);
       transition: $nav-chevron-transition;
-      background: var(--color-figure-gray);
+      background: var(--color-nav-color);
     }
 
     &::before {
       right: 50%;
       border-radius: .5px 0 0 .5px;
-      transform: rotate(#{$nav-chevron-angle}) scaleY($nav-chevron-thickness);
     }
 
     &::after {
       left: 50%;
       border-radius: 0 .5px .5px 0;
-      transform: rotate(-#{$nav-chevron-angle}) scaleY($nav-chevron-thickness);
     }
 
     @include nav-chevron-animation;

@@ -11,7 +11,13 @@
 <template>
   <footer class="footer">
     <div class="row">
-      <ColorSchemeToggle />
+      <div>
+        <p>ToastUI version: {{ version }}</p>
+        <p>Last updated: {{ updatedDate }}</p>
+      </div>
+      <div>
+        <ColorSchemeToggle />
+      </div>
     </div>
     <slot className="row"/>
   </footer>
@@ -23,6 +29,12 @@ import ColorSchemeToggle from 'docc-render/components/ColorSchemeToggle.vue';
 export default {
   name: 'Footer',
   components: { ColorSchemeToggle },
+  data() {
+    return {
+      version: process.env.VUE_APP_VERSION,
+      updatedDate: process.env.VUE_APP_UPDATED_DATE,
+    };
+  },
 };
 </script>
 
@@ -31,12 +43,27 @@ export default {
 
 .footer {
   border-top: $generic-border-style;
+  background: var(--color-fill-tertiary);
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.footer p {
+  font-size: 12px;
+  line-height: 1em;
+  margin-bottom: .75em;
+  letter-spacing: -.01em;
+  color: var(--color-figure-gray-secondary-alt);
 }
 
 .row {
   @include breakpoint-content;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
+  justify-content: space-between;
   margin: 20px auto;
   @include breakpoint(small) {
     width: 100%;

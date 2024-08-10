@@ -21,9 +21,9 @@
       <SuggestLang v-if="enablei18n" />
       <!-- Render the custom header by default, if there is no content in the `header` slot -->
       <custom-header v-if="hasCustomHeader" :data-color-scheme="preferredColorScheme" />
+      <!-- The nav sticky anchor has to always be between the Header and the Content -->
+      <Header :id="baseNavStickyAnchorId" />
     </slot>
-    <!-- The nav sticky anchor has to always be between the Header and the Content -->
-    <div :id="baseNavStickyAnchorId" />
     <InitialLoadingPlaceholder />
     <slot :isTargetIDE="isTargetIDE">
       <router-view class="router-content" />
@@ -43,6 +43,7 @@
 <script>
 import AppStore from 'docc-render/stores/AppStore';
 import ColorScheme from 'docc-render/constants/ColorScheme';
+import Header from 'docc-render/components/Header.vue';
 import Footer from 'docc-render/components/Footer.vue';
 import InitialLoadingPlaceholder from 'docc-render/components/InitialLoadingPlaceholder.vue';
 import { baseNavStickyAnchorId } from 'docc-render/constants/nav';
@@ -55,6 +56,7 @@ import LocaleSelector from 'docc-render/components/LocaleSelector.vue';
 export default {
   name: 'CoreApp',
   components: {
+    Header,
     Footer,
     InitialLoadingPlaceholder,
     SuggestLang,

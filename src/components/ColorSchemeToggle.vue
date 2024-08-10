@@ -67,6 +67,8 @@ export default {
 .color-scheme-toggle {
   --toggle-color-fill: var(--color-button-background);
   --toggle-color-text: var(--color-fill-blue);
+  --toggle-border-radius-outer: 12px;
+  --toggle-border-radius-inner: 10px;
 
   @include font-styles(caption);
   border: 1px solid var(--toggle-color-fill);
@@ -110,6 +112,8 @@ label {
 
   &:hover {
     cursor: pointer;
+    opacity: .65;
+    transition: $hover-opacity-transition;
   }
 
   input:checked + & {
@@ -117,6 +121,10 @@ label {
 
     background: var(--toggle-color-fill);
     border-color: var(--toggle-color-fill);
+
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 </style>

@@ -13,26 +13,38 @@
   --color-fill-secondary: #{dark-color(fill-secondary)};
   --color-fill-tertiary: #{dark-color(fill-tertiary)};
   --color-fill-blue: #{dark-color(fill-blue)};
+  --color-fill-blue-secondary: #{dark-color(fill-blue-secondary)};
   --color-fill-light-blue-secondary: #{dark-color(fill-light-blue-secondary)};
+  --color-fill-light-gray-secondary: #{dark-color(fill-light-gray-secondary)};
   --color-fill-gray: #{dark-color(fill-gray)};
   --color-fill-gray-secondary: #{dark-color(fill-gray-secondary)};
   --color-fill-gray-tertiary: #{dark-color(fill-gray-tertiary)};
   --color-fill-gray-quaternary: #{dark-color(fill-gray-quaternary)};
   --color-fill-green-secondary: #{dark-color(fill-green-secondary)};
   --color-fill-orange-secondary: #{dark-color(fill-orange-secondary)};
+  --color-fill-purple-secondary: #{dark-color(fill-purple-secondary)};
   --color-fill-red-secondary: #{dark-color(fill-red-secondary)};
+  --color-fill-teal-secondary: #{dark-color(fill-teal-secondary)};
+  --color-fill-yellow-secondary: #{dark-color(fill-yellow-secondary)};
   --color-figure-blue: #{dark-color(figure-blue)};
   --color-figure-gray: #{dark-color(figure-gray)};
   --color-figure-gray-secondary: #{dark-color(figure-gray-secondary)};
   --color-figure-gray-secondary-alt: #{dark-color(figure-gray-secondary-alt)};
   --color-figure-gray-tertiary: #{dark-color(figure-gray-tertiary)};
   --color-figure-green: #{dark-color(figure-green)};
+  --color-figure-light-blue: #{dark-color(figure-light-blue)};
   --color-figure-light-gray: #{dark-color(figure-light-gray)};
   --color-figure-orange: #{dark-color(figure-orange)};
+  --color-figure-pink: #{dark-color(figure-pink)};
+  --color-figure-purple: #{dark-color(figure-purple)};
   --color-figure-red: #{dark-color(figure-red)};
+  --color-figure-teal: #{dark-color(figure-teal)};
+  --color-figure-yellow: #{dark-color(figure-yellow)};
+  --color-highlight-green: #{dark-color(highlight-green)};
+  --color-highlight-red: #{dark-color(highlight-red)};
   --color-tutorials-teal: #{dark-color(tutorials-teal)};
 
-  --color-article-body-background: rgb(17, 17, 17);
+  --color-article-body-background: var(--color-fill-secondary);
   --color-badge-text: #{light-color(figure-gray)};
   --color-badge-default: var(--color-badge-dark-default);
   --color-button-background-active: #{dark-color(fill-blue)};
@@ -99,4 +111,15 @@
   --color-standard-green: #023B2D;
   --color-standard-purple: #512B55;
   --color-standard-gray: #{dark-color(fill-tertiary)};
+
+  --color-changes-deprecated-hover: #{change-color(light-color(figure-orange), $alpha: 0.05)};
+  --color-code-background: var(--color-fill-gray-quaternary);
+  --color-code-collapsible-background: var(--color-fill-tertiary);
+  --color-code-line-highlight: var(--color-fill-gray-tertiary);
+  --color-code-plain: #{light-color(fill)};
+  --color-not-found-input-background: var(--color-fill-gray-quaternary);
+  --color-step-background: var(--color-fill-gray-quaternary);
+  --color-svg-icon: #{dark-color(fill-gray-secondary)};
+  --color-tutorial-navbar-dropdown-background: var(--color-nav-dark-solid-background);
+  --color-tutorial-navbar-dropdown-border: var(--color-fill-gray-tertiary);
 }
